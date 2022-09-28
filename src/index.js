@@ -1,7 +1,6 @@
 import "./style.css";
 import {} from "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import {} from "../node_modules/bootstrap/dist/css/bootstrap.css";
-import { DllPlugin } from "webpack";
 
 function update(code, input) {
   switch (code) {
@@ -10,18 +9,25 @@ function update(code, input) {
         '<img class="img-responsive" id="image" src="' +
         input +
         '" alt="your image" title="your image"/>';
+        console.log("Done", input);
+
       break;
 
     case 2:
-      document.getElementById("image").style.width = input;
+      document.getElementById("image").style.width = input+"px";
+      console.log("Done", input);
+
       break;
 
     case 3:
-      document.getElementById("image").style.borderWidth = input;
+      document.getElementById("image").style.borderWidth = input+"pt";
+      console.log("Done", input);
       break;
 
     case 4:
       document.getElementById("image").style.borderColor = input;
+      console.log("Done", input);
+
       break;
 
     default:
