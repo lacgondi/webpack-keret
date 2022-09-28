@@ -2,6 +2,8 @@ import "./style.css";
 import {} from "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import {} from "../node_modules/bootstrap/dist/css/bootstrap.css";
 
+let counter = 0;
+
 function update(code, input) {
   switch (code) {
     case 1:
@@ -35,6 +37,10 @@ function update(code, input) {
   }
 }
 
+function darkMode(){
+    document.body.classList.toggle("dark");
+}
+
 function init() {
   document.getElementById("url").addEventListener("change", function () {
     update(1, document.getElementById("url").value);
@@ -48,6 +54,7 @@ function init() {
   document.getElementById("colorPick").addEventListener("change", function () {
     update(4, document.getElementById("colorPick").value);
   });
+  document.getElementById("darkMode").addEventListener("click", darkMode);
 }
 
 document.addEventListener("DOMContentLoaded", init);
