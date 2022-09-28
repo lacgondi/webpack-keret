@@ -6,9 +6,62 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-</head>
-<body>
-    <p>This is a template</p>    
     <script src='main.js'></script>
+</head>
+<body class="light">
+    <p class="h1">This is a template</p>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 col-12">
+                <label class="form-label" class="form-label" for="url">A kép url-je</label>
+            </div>
+            <div class="col-md-6 col-12">
+                <input class="form-control" class="form-control" type="text" name="url" id="url">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <label class="form-label" class="form-label" for="url">A kép szélessége</label>
+            </div>
+            <div class="col-md-6 col-12">
+                <input class="form-control" class="form-control" type="number" name="width" id="width">            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <label class="form-label" for="url">A képkeret vastagsága</label>
+            </div>
+            <div class="col-md-6 col-12">
+                <input class="form-control" type="number" name="thickness" id="thickness">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <label class="form-label" for="url">A képkeret színe</label>
+            </div>
+            <div class="col-md-6 col-12">
+                <input class="form-control" type="color" name="colorPick" id="colorPick">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-auto">
+                <img class="img-fluid mx-auto d-block" id="image" src="../O89vfci.jpeg" alt="your image" title="your image">
+            </div>
+        </div>
+    </div>    
+    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <p class="lead">Gondi László Zsolt - 2/14.T</p>
+            </div>
+            <div class="col-md-6 col-12">
+                <button type="button" id="darkMode" class="btn btn-dark">Dark</button>
+            </div>
+        </div>
+      </div>
+</footer>
+
 </body>
 </html>
