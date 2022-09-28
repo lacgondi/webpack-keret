@@ -8,7 +8,48 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <p>This is a template</p>    
+    <p class="h1">This is a template</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <label for="url">A kép url-je</label>
+            </div>
+            <div class="col-md-6 col-12">
+                <input type="text" name="url" id="url">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="url">A kép szélessége</label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="width" id="width">            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="url">A képkeret vastagsága</label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="thickness" id="thickness">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="url">A képkeret színe</label>
+            </div>
+            <div class="col-md-6">
+                <input type="color" name="colorPick" id="colorPick">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-auto">
+                <img class="img-responsive" id="image" src="" alt="your image" title="your image">
+            </div>
+        </div>
+    </div>    
+    
+
     <script src='main.js'></script>
 </body>
 </html>
