@@ -9,18 +9,18 @@ function update(code, input) {
         '<img class="img-responsive" id="image" src="' +
         input +
         '" alt="your image" title="your image"/>';
-        console.log("Done", input);
+      console.log("Done", input);
 
       break;
 
     case 2:
-      document.getElementById("image").style.width = input+"px";
+      document.getElementById("image").style.width = input + "px";
       console.log("Done", input);
 
       break;
 
     case 3:
-      document.getElementById("image").style.borderWidth = input+"pt";
+      document.getElementById("image").style.borderWidth = input + "px";
       console.log("Done", input);
       break;
 
