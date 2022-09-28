@@ -7,10 +7,7 @@ let counter = 0;
 function update(code, input) {
   switch (code) {
     case 1:
-      document.getElementById("image").innerHTML =
-        '<img class="img-responsive" id="image" src="' +
-        input +
-        '" alt="your image" title="your image"/>';
+      document.getElementById("image").src = input
       console.log("Done", input);
 
       break;
